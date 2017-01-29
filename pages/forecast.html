@@ -1,0 +1,19 @@
+
+<div>
+	<div class="row">
+		<div class="col-md-12" style="text-align: center">
+			<h3>{{cityName}}</h3>
+			<p>{{k2F(wResult.list[0].temp.day)}}&#x2109;</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="wBadge" ng-repeat="forecast in wResult.list">
+			<div ng-class="{'col-md-offset-2 col-md-2':$index==4,'col-md-3':$index<4, 'col-md-2 col-md-offset-1':$index>4}" style="text-align: center">
+				<p>{{d2C(forecast.dt)}}</p>
+				<p>Highest {{k2F(forecast.temp.max)}}&#x2109;</p>
+				<p>Lowest {{k2F(forecast.temp.min)}}&#x2109;</p>
+			</div>
+
+		</div>
+	</div>
+</div>
