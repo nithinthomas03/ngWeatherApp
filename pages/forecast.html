@@ -1,9 +1,10 @@
-
-<div>
+<div class="forecast">
 	<div class="row">
-		<div class="col-md-12" style="text-align: center">
-			<h3>{{cityName}}</h3>
-			<p>{{k2F(wResult.list[0].temp.day)}}&#x2109;</p>
+		<div class="col-md-12 day" style="text-align: center">
+			<h3 class="capitalize">{{cityName}}, {{wResult.city.country}}</h3>
+			<h1>{{wIcon}}</h1>
+			<h1>{{k2F(wResult.list[0].temp.day)}}&#x2109;</h1>
+			<h4 class="capitalize">{{wResult.list[0].weather[0].description}}</h4>
 		</div>
 	</div>
 	<div class="row">
@@ -12,6 +13,7 @@
 				<p>{{d2C(forecast.dt)}}</p>
 				<p>Highest {{k2F(forecast.temp.max)}}&#x2109;</p>
 				<p>Lowest {{k2F(forecast.temp.min)}}&#x2109;</p>
+				<p>{{forecast.weather[0].main}}</p>
 			</div>
 
 		</div>

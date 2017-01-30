@@ -1,4 +1,26 @@
-/*.wBadge{
-	float: none;
-	margin: 0 auto;
-}*/
+.capitalize{
+	text-transform: capitalize;
+}
+
+.title{
+	color: white;
+}
+
+.homeBg{
+	background-image: url("img/world.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.homelink a{
+	text-decoration: none;
+	color: white;
+}
+
+.forecast{
+	color: white;
+}
+
+.day h1{
+	display: inline-block;
+}
