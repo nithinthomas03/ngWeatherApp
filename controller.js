@@ -17,6 +17,8 @@ myapp.controller("forecastController",["$scope",'cityService','weatherService',f
 		$scope.wIcon = $scope.wResult.list[0].weather[0].icon;
 	});
 
+	console.log("test");
+
 	
 	$scope.k2F = function(tempK){
 		return Math.round((9/5*(tempK - 273)+32));
